@@ -12,9 +12,14 @@
    <children>
       <StackPane prefHeight="803.0" prefWidth="1250.0">
          <children>
-            <AnchorPane prefHeight="803.0" prefWidth="1278.0" visible="false">
+            <AnchorPane fx:id="addform_Main" prefHeight="803.0" prefWidth="1278.0">
                <children>
-                  <AnchorPane fx:id="add_form" layoutX="299.0" prefHeight="803.0" prefWidth="1254.0" styleClass="add_app" stylesheets="@css/dental.css" />
+                  <AnchorPane fx:id="add_form" layoutX="360.0" prefHeight="911.0" prefWidth="1193.0" styleClass="add_app" stylesheets="@css/dental.css" visible="false" />
+                  <ImageView fx:id="add_image" fitHeight="1009.0" fitWidth="1604.0" layoutX="308.0" layoutY="-5.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" visible="false">
+                     <image>
+                        <Image url="@images/bgAddapp.png" />
+                     </image>
+                  </ImageView>
                </children>
             </AnchorPane>
          </children>
@@ -23,7 +28,7 @@
          <children>
             <AnchorPane layoutX="141.0" prefHeight="803.0" prefWidth="305.0" styleClass="form1" stylesheets="@css/dental.css">
                <children>
-                  <ImageView fitHeight="690.0" fitWidth="306.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="690.0" fitWidth="314.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/421509594_1053495539070680_6653102900929360676_n%20(1).png" />
                      </image>
@@ -33,7 +38,7 @@
                         <Image url="@images/LOGO%20(2).png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="481.0" fitWidth="297.0" layoutX="5.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="481.0" fitWidth="308.0" layoutX="-6.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/421509594_1053495539070680_6653102900929360676_n%20(1).png" />
                      </image>
