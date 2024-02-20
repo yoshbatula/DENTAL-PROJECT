@@ -33,6 +33,8 @@ public class HelloController {
         String username = "admin";
         String password = "admin123";
 
+        System.out.print("yoshie gwapo!");
+
         Alert alert;
 
         if  (user.getText().isBlank() && pass.getText().isBlank()) {
