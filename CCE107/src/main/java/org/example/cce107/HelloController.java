@@ -33,7 +33,7 @@ public class HelloController {
         String username = "admin";
         String password = "admin123";
 
-        System.out.print("yoshie gwapo!");
+        System.out.println("yosh pangit");
 
         Alert alert;
 
