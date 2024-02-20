@@ -11,71 +11,58 @@ import javafx.scene.image.ImageView;
 import javafx.scene.layout.AnchorPane;
 
 import javafx.stage.Stage;
+import org.controlsfx.control.action.Action;
 
 public class MAINPAGECONT {
 
     @FXML
-    private Button addBTN;
+    private Button appoint_btn;
 
     @FXML
-    private Button doctorBTN;
-
-    @FXML
-    private Button homeBTN;
-
-    @FXML
-    private AnchorPane home_form;
-
-    @FXML
-    private AnchorPane home_form1;
+    private AnchorPane appoint_form;
 
     @FXML
     private AnchorPane doc_form;
 
     @FXML
-    private AnchorPane add_form;
+    private Button doctor_btn;
 
     @FXML
-    private AnchorPane addform_Main;
+    private Button home_btn;
 
     @FXML
-    private ImageView add_image;
+    private AnchorPane home_form;
 
     public void switchForm(ActionEvent event) {
 
+        if (event.getSource() == home_btn) {
 
-        if (event.getSource() == homeBTN) {
             home_form.setVisible(true);
-            home_form1.setVisible(true);
-            addform_Main.setVisible(false);
+            appoint_form.setVisible(false);
             doc_form.setVisible(false);
 
-            home_form.setStyle("-fx-background-color: white");
-            home_form1.setStyle("-fx-background-color: #D0E3FF");
-            addform_Main.setStyle("-fx-background-color: transparent");
+            home_form.setStyle("-fx-background-color: #BAD6EB");
+            appoint_form.setStyle("-fx-background-color: transparent");
             doc_form.setStyle("-fx-background-color: transparent");
 
-        } else if (event.getSource() == addBTN) {
-            addform_Main.setVisible(true);
-            add_image.setVisible(true);
+        } else if (event.getSource() == appoint_btn) {
+
             home_form.setVisible(false);
-            home_form1.setVisible(false);
+            appoint_form.setVisible(true);
             doc_form.setVisible(false);
 
-            addform_Main.setStyle("-fx-background-color: #F2F0DE");
+            appoint_form.setStyle("-fx-background-color:  #F6E9DA");
             doc_form.setStyle("-fx-background-color: transparent");
-            home_form1.setStyle("-fx-background-color: transparent");
             home_form.setStyle("-fx-background-color: transparent");
 
-        } else if (event.getSource() == doctorBTN) {
-            doc_form.setVisible(true);
-            addform_Main.setVisible(false);
-            home_form1.setVisible(false);
-            home_form.setVisible(false);
+        } else if (event.getSource() == doctor_btn) {
 
-            doc_form.setStyle("-fx-background-color: #37A1C3");
-            addform_Main.setStyle("-fx-background-color: transparent");
-            home_form1.setStyle("-fx-background-color: transparent");
+            home_form.setVisible(false);
+            appoint_form.setVisible(false);
+            doc_form.setVisible(true);
+
+            doc_form.setStyle("-fx-background-color:  #37A1C3");
+            appoint_form.setStyle("-fx-background-color: transparent");
             home_form.setStyle("-fx-background-color: transparent");
         }
     }

@@ -5,114 +5,97 @@
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
-<?import javafx.scene.layout.StackPane?>
-<?import javafx.scene.shape.Line?>
+<?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="1551.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cce107.MAINPAGECONT">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="801.0" prefWidth="1546.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cce107.MAINPAGECONT">
    <children>
-      <StackPane prefHeight="803.0" prefWidth="1250.0">
+      <VBox prefHeight="802.0" prefWidth="314.0">
          <children>
-            <AnchorPane fx:id="addform_Main" prefHeight="803.0" prefWidth="1278.0">
+            <AnchorPane prefHeight="802.0" prefWidth="314.0">
                <children>
-                  <Line endX="4.333251953125" startX="-191.66671752929688" />
-                  <AnchorPane fx:id="add_form" layoutX="360.0" prefHeight="911.0" prefWidth="1193.0" styleClass="add_app" stylesheets="@css/dental.css" />
-                  <ImageView fx:id="add_image" fitHeight="1009.0" fitWidth="1604.0" layoutX="308.0" layoutY="-5.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/bgAddapp.png" />
-                     </image>
-                  </ImageView>
-               </children>
-            </AnchorPane>
-         </children>
-      </StackPane>
-      <AnchorPane prefHeight="803.0" prefWidth="1786.0">
-         <children>
-            <AnchorPane layoutX="141.0" prefHeight="803.0" prefWidth="305.0" styleClass="form1" stylesheets="@css/dental.css">
-               <children>
-                  <ImageView fitHeight="690.0" fitWidth="314.0" layoutX="-8.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="801.0" fitWidth="314.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/421509594_1053495539070680_6653102900929360676_n%20(1).png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="202.0" fitWidth="286.0" layoutX="10.0" layoutY="38.0" pickOnBounds="true" preserveRatio="true">
+                  <ImageView fitHeight="444.0" fitWidth="314.0" layoutY="357.0" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@images/421509594_1053495539070680_6653102900929360676_n%20(1).png" />
+                     </image>
+                  </ImageView>
+                  <ImageView fitHeight="201.0" fitWidth="284.0" layoutX="10.0" layoutY="19.0" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/LOGO%20(2).png" />
                      </image>
                   </ImageView>
-                  <ImageView fitHeight="481.0" fitWidth="308.0" layoutX="-6.0" layoutY="383.0" pickOnBounds="true" preserveRatio="true">
-                     <image>
-                        <Image url="@images/421509594_1053495539070680_6653102900929360676_n%20(1).png" />
-                     </image>
-                  </ImageView>
-                  <Button fx:id="homeBTN" layoutX="96.0" layoutY="402.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="26.0" prefWidth="114.0" styleClass="side_navigate" stylesheets="@css/dental.css" text="HOME">
+                  <Label layoutX="27.0" layoutY="222.0" text="UNIVERSITY OF MINDANAO" textFill="WHITE">
+                     <font>
+                        <Font name="Palatino Linotype Bold" size="18.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="61.0" layoutY="215.0" text="Dental Clinic" textFill="WHITE">
+                     <font>
+                        <Font name="High Spirited" size="51.0" />
+                     </font>
+                  </Label>
+                  <Label layoutX="58.0" layoutY="303.0" text="Healthy smiles, birghter Future." textFill="WHITE">
                      <font>
                         <Font name="Palatino Linotype Bold" size="14.0" />
-                     </font></Button>
-                  <Button fx:id="doctorBTN" layoutX="95.0" layoutY="458.0" mnemonicParsing="false" onAction="#switchForm" prefHeight="26.0" prefWidth="114.0" styleClass="side_navigate" stylesheets="@css/dental.css" text="DOCTORS">
-                     <font>
-                        <Font name="Palatino Linotype Bold" size="14.0" />
-                     </font></Button>
-                  <Button fx:id="addBTN" layoutX="68.0" layoutY="509.0" mnemonicParsing="false" onAction="#switchForm" styleClass="side_navigate" stylesheets="@css/dental.css" text="ADD APPOINTMENT">
+                     </font>
+                  </Label>
+                  <Button fx:id="home_btn" layoutX="119.0" layoutY="387.0" mnemonicParsing="false" onAction="#switchForm" text="HOME">
                      <font>
                         <Font name="Palatino Linotype Bold" size="14.0" />
                      </font>
                   </Button>
-                  <Label layoutX="40.0" layoutY="236.0" prefHeight="27.0" prefWidth="244.0" text="University Of Mindanao" textFill="WHITE">
+                  <Button fx:id="appoint_btn" layoutX="68.0" layoutY="444.0" mnemonicParsing="false" onAction="#switchForm" text="ADD APPOINTMENT">
                      <font>
-                        <Font name="Palatino Linotype Bold" size="21.0" />
+                        <Font name="Palatino Linotype Bold" size="14.0" />
                      </font>
-                  </Label>
-                  <Label layoutX="63.0" layoutY="236.0" prefHeight="68.0" prefWidth="197.0" text="Dental Clinic" textFill="WHITE">
+                  </Button>
+                  <Button fx:id="doctor_btn" layoutX="110.0" layoutY="503.0" mnemonicParsing="false" onAction="#switchForm" text="DOCTORS">
                      <font>
-                        <Font name="High Spirited" size="48.0" />
+                        <Font name="Palatino Linotype Bold" size="14.0" />
                      </font>
-                  </Label>
-                  <Label layoutX="60.0" layoutY="317.0" text="Healthy smiles, brighter Future." textFill="WHITE">
+                  </Button>
+                  <Label layoutX="86.0" layoutY="604.0" text="UM Matina Campus" textFill="WHITE">
                      <font>
                         <Font name="Palatino Linotype Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="84.0" layoutY="603.0" text="UM Matina Campus " textFill="#fafafa">
-                     <font>
-                        <Font name="Palatino Linotype Bold" size="14.0" />
-                     </font></Label>
-                  <Label layoutX="84.0" layoutY="629.0" text="Matina, Davao City" textFill="#fafafa">
+                  <Label layoutX="87.0" layoutY="630.0" text="Matina, Davao City" textFill="WHITE">
                      <font>
                         <Font name="Palatino Linotype Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="78.0" layoutY="656.0" prefHeight="18.0" prefWidth="147.0" text="Tel No. (082) 286-2331" textFill="#fafafa">
+                  <Label layoutX="80.0" layoutY="656.0" text="Tel No. (082) 286-2331" textFill="WHITE">
                      <font>
                         <Font name="Palatino Linotype Bold" size="14.0" />
                      </font>
                   </Label>
-                  <Label layoutX="63.0" layoutY="683.0" prefHeight="18.0" prefWidth="179.0" text="Cellphone No. 09123456789" textFill="#fafafa">
+                  <Label layoutX="65.0" layoutY="684.0" text="Cellphone No. 09123456789" textFill="WHITE">
                      <font>
                         <Font name="Palatino Linotype Bold" size="14.0" />
                      </font>
                   </Label>
-               </children>
-            </AnchorPane>
-            <AnchorPane fx:id="home_form" layoutX="446.0" prefHeight="803.0" prefWidth="1385.0" stylesheets="@css/dental.css">
-               <children>
-                  <AnchorPane fx:id="home_form1" layoutX="1.0" prefHeight="342.0" prefWidth="1246.0" styleClass="add_form" stylesheets="@css/dental.css" visible="false" />
-                  <AnchorPane layoutY="343.0" prefHeight="458.0" prefWidth="1246.0" stylesheets="@css/dental.css" visible="false" />
-               </children>
-            </AnchorPane>
-            <AnchorPane layoutX="447.0" prefHeight="803.0" prefWidth="1254.0" styleClass="doc_form" stylesheets="@css/dental.css">
-               <children>
-                  <AnchorPane fx:id="doc_form" prefHeight="803.0" prefWidth="1246.0" styleClass="doc_form" stylesheets="@css/dental.css">
-                     <children>
-                        <Label layoutX="17.0" layoutY="128.0" prefHeight="99.0" prefWidth="593.0" text="Add Appointment">
-                           <font>
-                              <Font name="Brush Script MT Italic" size="50.0" />
-                           </font>
-                        </Label>
-                     </children></AnchorPane>
                </children>
             </AnchorPane>
          </children>
+      </VBox>
+      <AnchorPane fx:id="home_form" layoutX="314.0" prefHeight="802.0" prefWidth="1235.0">
+         <children>
+            <AnchorPane prefHeight="286.0" prefWidth="1235.0" style="-fx-background-color: #BAD6EB;" />
+         </children>
+      </AnchorPane>
+      <AnchorPane fx:id="appoint_form" layoutX="314.0" prefHeight="802.0" prefWidth="1235.0" style="-fx-background-color: #F6E9DA;" visible="false">
+         <children>
+            <AnchorPane layoutX="-3.0" prefHeight="802.0" prefWidth="1235.0" />
+         </children></AnchorPane>
+      <AnchorPane fx:id="doc_form" layoutX="314.0" prefHeight="802.0" prefWidth="1235.0" style="-fx-background-color: #37A1C3;" visible="false">
+         <children>
+            <AnchorPane prefHeight="802.0" prefWidth="1235.0" />
+         </children>
       </AnchorPane>
    </children>
-</StackPane>
+</AnchorPane>
