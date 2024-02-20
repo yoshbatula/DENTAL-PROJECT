@@ -6,6 +6,7 @@
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.shape.Line?>
 <?import javafx.scene.text.Font?>
 
 <StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="803.0" prefWidth="1551.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="org.example.cce107.MAINPAGECONT">
@@ -14,8 +15,9 @@
          <children>
             <AnchorPane fx:id="addform_Main" prefHeight="803.0" prefWidth="1278.0">
                <children>
-                  <AnchorPane fx:id="add_form" layoutX="360.0" prefHeight="911.0" prefWidth="1193.0" styleClass="add_app" stylesheets="@css/dental.css" visible="false" />
-                  <ImageView fx:id="add_image" fitHeight="1009.0" fitWidth="1604.0" layoutX="308.0" layoutY="-5.0" opacity="0.9" pickOnBounds="true" preserveRatio="true" visible="false">
+                  <Line endX="4.333251953125" startX="-191.66671752929688" />
+                  <AnchorPane fx:id="add_form" layoutX="360.0" prefHeight="911.0" prefWidth="1193.0" styleClass="add_app" stylesheets="@css/dental.css" />
+                  <ImageView fx:id="add_image" fitHeight="1009.0" fitWidth="1604.0" layoutX="308.0" layoutY="-5.0" opacity="0.9" pickOnBounds="true" preserveRatio="true">
                      <image>
                         <Image url="@images/bgAddapp.png" />
                      </image>
@@ -94,13 +96,20 @@
             </AnchorPane>
             <AnchorPane fx:id="home_form" layoutX="446.0" prefHeight="803.0" prefWidth="1385.0" stylesheets="@css/dental.css">
                <children>
-                  <AnchorPane fx:id="home_form1" layoutX="1.0" prefHeight="342.0" prefWidth="1246.0" styleClass="add_form" stylesheets="@css/dental.css" />
+                  <AnchorPane fx:id="home_form1" layoutX="1.0" prefHeight="342.0" prefWidth="1246.0" styleClass="add_form" stylesheets="@css/dental.css" visible="false" />
                   <AnchorPane layoutY="343.0" prefHeight="458.0" prefWidth="1246.0" stylesheets="@css/dental.css" visible="false" />
                </children>
             </AnchorPane>
             <AnchorPane layoutX="447.0" prefHeight="803.0" prefWidth="1254.0" styleClass="doc_form" stylesheets="@css/dental.css">
                <children>
-                  <AnchorPane fx:id="doc_form" prefHeight="803.0" prefWidth="1246.0" styleClass="doc_form" stylesheets="@css/dental.css" />
+                  <AnchorPane fx:id="doc_form" prefHeight="803.0" prefWidth="1246.0" styleClass="doc_form" stylesheets="@css/dental.css">
+                     <children>
+                        <Label layoutX="17.0" layoutY="128.0" prefHeight="99.0" prefWidth="593.0" text="Add Appointment">
+                           <font>
+                              <Font name="Brush Script MT Italic" size="50.0" />
+                           </font>
+                        </Label>
+                     </children></AnchorPane>
                </children>
             </AnchorPane>
          </children>
