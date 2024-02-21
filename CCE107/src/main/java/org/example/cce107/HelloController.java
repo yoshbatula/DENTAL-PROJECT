@@ -52,7 +52,7 @@ public class HelloController {
                     Platform.runLater(() -> pass_need.setText(""));
                     timer.cancel();
                 }
-            }, 3000);
+            }, 3500);
 
         } if  (user.getText().isBlank()) {
 
@@ -65,7 +65,7 @@ public class HelloController {
                     Platform.runLater(() -> userid.setText(""));
                     timer.cancel();
                 }
-            }, 3000);
+            }, 3500);
 
         } if (username.equals(user.getText()) && password.equals(pass.getText())) {
 
@@ -94,7 +94,7 @@ public class HelloController {
                     Platform.runLater(() -> label_wrong.setText(""));
                     timer.cancel();
                 }
-            }, 3000);
+            }, 3500);
         }
     }
 
