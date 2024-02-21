@@ -29,20 +29,43 @@ public class HelloController {
     @FXML
     private Label label_wrong;
 
+    @FXML
+    private Label pass_need;
+
+    @FXML
+    private Label userid;
+
     public void login(ActionEvent event) {
         String username = "admin";
         String password = "admin123";
 
-        System.out.println("yosh");
-
         Alert alert;
 
-        if  (user.getText().isBlank() && pass.getText().isBlank()) {
-            alert = new Alert(Alert.AlertType.CONFIRMATION);
-            alert.setHeaderText("INFORMATION");
-            alert.setTitle("ERROR!");
-            alert.setContentText("PLEASE FILL IN THE BLANK");
-            alert.showAndWait();
+        if  (pass.getText().isBlank()) {
+
+            pass_need.setText("This is required.");
+
+            Timer timer = new Timer();
+            timer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    Platform.runLater(() -> pass_need.setText(""));
+                    timer.cancel();
+                }
+            }, 3000);
+
+        } if  (user.getText().isBlank()) {
+
+            userid.setText("This is required.");
+
+            Timer timer = new Timer();
+            timer.schedule(new TimerTask() {
+                @Override
+                public void run() {
+                    Platform.runLater(() -> userid.setText(""));
+                    timer.cancel();
+                }
+            }, 3000);
 
         } if (username.equals(user.getText()) && password.equals(pass.getText())) {
 
@@ -61,7 +84,8 @@ public class HelloController {
             stage.show();
 
         } else {
-            label_wrong.setText("WRONG PASSWORD!");
+
+            label_wrong.setText("Incorrect username / password.");
 
             Timer timer = new Timer();
             timer.schedule(new TimerTask() {
@@ -70,7 +94,7 @@ public class HelloController {
                     Platform.runLater(() -> label_wrong.setText(""));
                     timer.cancel();
                 }
-            }, 1000);
+            }, 3000);
         }
     }
 
