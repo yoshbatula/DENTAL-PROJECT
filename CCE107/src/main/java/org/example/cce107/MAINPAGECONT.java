@@ -36,7 +36,7 @@ public class MAINPAGECONT {
 
     public void switchForm(ActionEvent event) {
 
-        System.out.println("yosh gwapo");
+
 
         if (event.getSource() == home_btn) {
 

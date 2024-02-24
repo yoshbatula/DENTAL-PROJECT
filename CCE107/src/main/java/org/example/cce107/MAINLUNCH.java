@@ -10,7 +10,6 @@ public class MAINLUNCH extends Application {
         FXMLLoader fxmlLoader = new FXMLLoader(HelloApplication.class.getResource("fxml/main.fxml"));
         Scene scene = new Scene(fxmlLoader.load());
         stage.setTitle("YUEM DENTAL CLINIC MAIN PAGE!");
-
         stage.setScene(scene);
         stage.show();
 

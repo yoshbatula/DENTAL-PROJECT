@@ -86,6 +86,7 @@
       <AnchorPane fx:id="home_form" layoutX="314.0" prefHeight="802.0" prefWidth="1235.0">
          <children>
             <AnchorPane prefHeight="286.0" prefWidth="1235.0" style="-fx-background-color: #BAD6EB;" />
+            <AnchorPane layoutX="260.0" layoutY="229.0" prefHeight="306.0" prefWidth="374.0" style="-fx-background-color: black;" />
          </children>
       </AnchorPane>
       <AnchorPane fx:id="appoint_form" layoutX="314.0" prefHeight="802.0" prefWidth="1235.0" style="-fx-background-color: #F6E9DA;" visible="false">
