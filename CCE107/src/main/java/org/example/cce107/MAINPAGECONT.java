@@ -33,7 +33,10 @@ public class MAINPAGECONT {
     @FXML
     private AnchorPane home_form;
 
+
     public void switchForm(ActionEvent event) {
+
+        System.out.println("yosh gwapo");
 
         if (event.getSource() == home_btn) {
 
