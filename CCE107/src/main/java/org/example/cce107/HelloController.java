@@ -6,6 +6,8 @@ import java.util.Timer;
 import java.util.TimerTask;
 
 import javafx.application.Platform;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
@@ -35,6 +37,9 @@ public class HelloController {
     @FXML
     private Label userid;
 
+    @FXML
+    private RadioButton showpass;
+
     public void login(ActionEvent event) {
         String username = "admin";
         String password = "admin123";
@@ -52,7 +57,7 @@ public class HelloController {
                     Platform.runLater(() -> pass_need.setText(""));
                     timer.cancel();
                 }
-            }, 3000);
+            }, 3500);
 
         } if  (user.getText().isBlank()) {
 
@@ -65,7 +70,7 @@ public class HelloController {
                     Platform.runLater(() -> userid.setText(""));
                     timer.cancel();
                 }
-            }, 3000);
+            }, 3500);
 
         } if (username.equals(user.getText()) && password.equals(pass.getText())) {
 
@@ -94,9 +99,12 @@ public class HelloController {
                     Platform.runLater(() -> label_wrong.setText(""));
                     timer.cancel();
                 }
-            }, 3000);
+            }, 3500);
         }
+
     }
+
+
 
 
 }
