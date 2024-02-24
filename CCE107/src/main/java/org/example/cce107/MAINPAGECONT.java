@@ -67,4 +67,7 @@ public class MAINPAGECONT {
         }
     }
 
+    public void AddAppointments(ActionEvent event) {
+        System.out.println("diria mo himo or edit guys");
+    }
 }
