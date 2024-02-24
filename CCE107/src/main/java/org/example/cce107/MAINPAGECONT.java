@@ -33,6 +33,7 @@ public class MAINPAGECONT {
     @FXML
     private AnchorPane home_form;
 
+
     public void switchForm(ActionEvent event) {
 
         if (event.getSource() == home_btn) {

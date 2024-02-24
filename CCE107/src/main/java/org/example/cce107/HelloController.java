@@ -37,7 +37,8 @@ public class HelloController {
     @FXML
     private Label userid;
 
-
+    @FXML
+    private RadioButton showpass;
 
     public void login(ActionEvent event) {
         String username = "admin";
@@ -100,7 +101,10 @@ public class HelloController {
                 }
             }, 3500);
         }
+
     }
+
+
 
 
 }
